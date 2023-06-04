@@ -45,7 +45,7 @@ function validarInput (){
     
     let errorInput = document.querySelector("#errorInput");
     errorInput.innerHTML= "";
-    errorInput.style.display = none;
+    errorInput.style.display = "none";
 
     let repuesta = document.querySelector("#repuesta");
     var verificador = false;
@@ -86,17 +86,17 @@ function validarInput (){
 
 
 
-    if(!patter5.test(Apellido.value)){
+    if(!patter5.test(apellido.value)){
         let p = document.createElement("p");
         p.innerHTML= "Se ingreso incorrectamente su Apellido";
-        Apellido.classList.add("error");
+        apellido.classList.add("error");
         errorInput.appendChild(p);
         verificador=true;
     }
-    if (Apellido.value = ""){
+    if (apellido.value = ""){
         let p = document.createElement("p");
         p.innerHTML= "Ingrese su Apellido para continuar";
-        Apellido.classList.add("error");
+        apellido.classList.add("error");
         errorInput.appendChild(p);
         verificador=true;
     }
@@ -129,26 +129,26 @@ function validarInput (){
 
     if(verificador){
         errorInput.style.display="initial";
-        return false;
     }else{
         let titulo = document.createElement("h2");
         titulo.innerHTML= "Se envio su consulta correctamente";
-        let email = document.createElement("p");
-        email.innerHTML= "Email: "+ email.value;
-        let nombre = document.createElement("p");
-        nombre.innerHTML= "Nombre: "+ nombre.value;
-        let Apellido = document.createElement("p");
-        apellido.innerHTML= "Apellido: "+ apellido.value;
-        let consulta = document.createElement("p");
-        consulta.innerHTML= "Su motivo de consulta: "+ consulta.value;
-        let textarea = document.createElement("p");
-        textarea.innerHTML= "Su consulta: "+ textarea.value;
+        let e = document.createElement("p");
+        e.innerHTML= "Email: "+ email.value;
+        let n = document.createElement("p");
+        n.innerHTML= "Nombre: "+ nombre.value;
+        let a = document.createElement("p");
+        a.innerHTML= "Apellido: "+ apellido.value;
+        let c = document.createElement("p");
+        c.innerHTML= "Su motivo de consulta: "+ consulta.value;
+        let t = document.createElement("p");
+        t.innerHTML= "Su consulta: "+ textarea.value;
 
         repuesta.appendChild(titulo);
-        repuesta.appendChild(email);
-        repuesta.appendChild(nombre);
-        repuesta.appendChild(consulta);
-        repuesta.appendChild(textarea);
+        repuesta.appendChild(e);
+        repuesta.appendChild(n);
+        repuesta.appendChild(a);
+        repuesta.appendChild(c);
+        repuesta.appendChild(t);
     }
     return false;
 }
