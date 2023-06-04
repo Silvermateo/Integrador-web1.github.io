@@ -24,23 +24,33 @@ function fotoactual (){
     contimg.src = imagenes [cont];
 }
 
-let patter6= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+let patter6= /^\w+@\w+(\.\w{2,4})+$/;
 let patter5= /^[a-zA-Z]+$/;
 
 function validarInput (){
     let email = document.querySelector("#email");
     email.classList.remove("error");
+
     let nombre = document.querySelector("#nombre");
     nombre.classList.remove("error");
+
+    let apellido = document.querySelector("#apellido");
+    apellido.classList.remove("error");
+
     let consulta = document.querySelector("#consulta");
     consulta.classList.remove("error");
+
     let textarea = document.querySelector("#textarea");
     textarea.classList.remove("error");
+    
     let errorInput = document.querySelector("#errorInput");
     errorInput.innerHTML= "";
     errorInput.style.display = none;
+
     let repuesta = document.querySelector("#repuesta");
     var verificador = false;
+
+
 
     if(!patter6.test(email.value)){
         let p = document.createElement("p");
@@ -61,19 +71,35 @@ function validarInput (){
 
     if(!patter5.test(nombre.value)){
         let p = document.createElement("p");
-        p.innerHTML= "Se ingreso incorrectamente el Nombre o apellido";
+        p.innerHTML= "Se ingreso incorrectamente el Nombre";
         nombre.classList.add("error");
         errorInput.appendChild(p);
         verificador=true;
     }
     if (nombre.value = ""){
         let p = document.createElement("p");
-        p.innerHTML= "Ingrese su nombre y apellido para continuar";
+        p.innerHTML= "Ingrese su Nombre para continuar";
         nombre.classList.add("error");
         errorInput.appendChild(p);
         verificador=true;
     }
 
+
+
+    if(!patter5.test(Apellido.value)){
+        let p = document.createElement("p");
+        p.innerHTML= "Se ingreso incorrectamente su Apellido";
+        Apellido.classList.add("error");
+        errorInput.appendChild(p);
+        verificador=true;
+    }
+    if (Apellido.value = ""){
+        let p = document.createElement("p");
+        p.innerHTML= "Ingrese su Apellido para continuar";
+        Apellido.classList.add("error");
+        errorInput.appendChild(p);
+        verificador=true;
+    }
 
 
     if(!patter5.test(consulta.value)){
@@ -111,6 +137,8 @@ function validarInput (){
         email.innerHTML= "Email: "+ email.value;
         let nombre = document.createElement("p");
         nombre.innerHTML= "Nombre: "+ nombre.value;
+        let Apellido = document.createElement("p");
+        apellido.innerHTML= "Apellido: "+ apellido.value;
         let consulta = document.createElement("p");
         consulta.innerHTML= "Su motivo de consulta: "+ consulta.value;
         let textarea = document.createElement("p");

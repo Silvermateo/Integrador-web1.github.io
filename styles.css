@@ -235,7 +235,7 @@ body::-webkit-scrollbar-thumb {
 /*---------------------------------------------Formulario---------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
 .main-Formulario{
-  height:625px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;  
