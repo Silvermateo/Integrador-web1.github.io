@@ -192,7 +192,7 @@ body::-webkit-scrollbar-thumb {
 
 .section__nav-links:hover {
   color: #ffffff;
-  background-color: #11631f;
+  background-color: #999;
   opacity: .8;
 }
 

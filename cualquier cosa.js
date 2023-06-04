@@ -1,4 +1,3 @@
-/**/
 var imagenes = ["img-plantas/Amor seco.jpg","img-plantas/Marcela.jpg","img-plantas/Malva.jpg","Img-plantas/Cedron.jpeg"];
 var cont = 0;
 
