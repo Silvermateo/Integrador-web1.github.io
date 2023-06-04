@@ -59,7 +59,7 @@ function validarInput (){
         errorInput.appendChild(p);
         verificador=true;
     }
-    if (email.value = ""){
+    if (email.value == ""){
         let p = document.createElement("p");
         p.innerHTML= "Ingrese un mail para continuar";
         email.classList.add("error");
@@ -76,7 +76,7 @@ function validarInput (){
         errorInput.appendChild(p);
         verificador=true;
     }
-    if (nombre.value = ""){
+    if (nombre.value == ""){
         let p = document.createElement("p");
         p.innerHTML= "Ingrese su Nombre para continuar";
         nombre.classList.add("error");
@@ -93,7 +93,7 @@ function validarInput (){
         errorInput.appendChild(p);
         verificador=true;
     }
-    if (apellido.value = ""){
+    if (apellido.value == ""){
         let p = document.createElement("p");
         p.innerHTML= "Ingrese su Apellido para continuar";
         apellido.classList.add("error");
@@ -109,7 +109,7 @@ function validarInput (){
         errorInput.appendChild(p);
         verificador=true;
     }
-    if (consulta.value = ""){
+    if (consulta.value == ""){
         let p = document.createElement("p");
         p.innerHTML= "Ingrese su Motivo de consulta para continuar";
         consulta.classList.add("error");
@@ -118,8 +118,7 @@ function validarInput (){
     }
 
 
-
-    if (textarea.value = ""){
+    if (textarea.value == ""){
         let p = document.createElement("p");
         p.innerHTML= "Ingrese su Motivo de consulta para continuar";
         textarea.classList.add("error");

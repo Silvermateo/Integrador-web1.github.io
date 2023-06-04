@@ -309,6 +309,20 @@ body::-webkit-scrollbar-thumb {
 #errorInput p{
   color: red;
 }
+.article-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7ad3e;  
+}
+#repuesta{
+  display: flex;
+  flex-direction: column;
+  background: #f1a533;
+  color:#ffffff;
+  padding: 10px;
+}
+
 
 /*--------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------Mapa Provincia---------------------------------------------*/
