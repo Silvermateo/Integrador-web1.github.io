@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San_Luis_H.M.</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="shortcut icon" href="Imagenes/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header class="menu-header">
+        <div class="menu-header__fondo">
+
+        </div>
+        <div class="menu-header__div">
+            <div>
+                <img src="Imagenes/image.png" alt="Icono" class="menu-header__div__logo">
+            </div>
+            <nav class="menu-header__nav">
+                <ul>
+                    <li><a href="Mapa_Provincia.html">Mapa de la Provincia</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-Formulario">
+        <div class="fondo-input"></div>
+        <form class="main-Formulario__form" onsubmit="return validarInput()">
+            <div class="div-input">
+                <h3>Ingrese su Gmail</h3>
+                <input type="text" class="input" id="email">
+            </div>
+            <div class="div-input">
+                <h3>Ingrese su Nombre y Apellido</h3>
+                <input type="text" class="input" id="nombre">
+            </div>
+            <div class="div-input">
+                <h3>Ingrese el motivo de consulta</h3>
+                <input type="text" class="input" id="consulta">
+            </div>
+            <div class="div-input">
+                <h3>Ingrese la consulta</h3>
+                <textarea class="input" id="textarea"></textarea>
+            </div>
+                <input type="submit" class="input-submit">
+            <div id="errorInput">
+
+            </div>
+        </form>
+        <article>
+            <div id="repuesta">
+
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer__div">
+            <div class="footer__div-logo">
+                <img src="Imagenes/image.png" alt="logo" class="logo-footer">
+            </div>
+            <div class="footer__div-lista">
+                <h3>Contactos:</h3>
+                <ul>
+                    <li><a href="#">contacto1</a></li>
+                    <li><a href="#">contacto2</a></li>
+                    <li><a href="#">contacto3</a></li>
+                    <li><a href="#">contacto4</a></li>
+                    <li><a href="#">contacto5</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
